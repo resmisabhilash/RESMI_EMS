@@ -20,24 +20,16 @@ connectDB();
 
 const app = express();
 
-// app.use(cors({
-//   origin: process.env.FRONTEND_URL,
-//   methods: ["GET", "POST", "PUT", "DELETE"],
-//   credentials: true,
-// }));
+
 
 
 app.use(cors({
-  origin: [ "https://rework-ems-frontend.vercel.app","http://localhost:5173"], 
+  origin: [ "https://resmi-ems-frontend.vercel.app","http://localhost:5173"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 }));
 
-// app.use(cors({
-//   origin: "https://rework-ems-frontend.vercel.app", // Add frontend URL
-//   methods: ["GET", "POST", "PUT", "DELETE"],
-//   credentials: true,
-// }));
+
 
 
 
