@@ -1,0 +1,35 @@
+
+.homepage {
+  background: url("https://wallpaperaccess.com/full/11122227.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding-top: 20px;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.view-events-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background: #ff5733;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.view-events-btn:hover {
+  background: #e64a19;
+}
