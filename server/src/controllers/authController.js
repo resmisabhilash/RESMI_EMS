@@ -24,7 +24,7 @@ const register = async (req, res) => {
 
       // Save the user to the database
       await newUser.save();
-      const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
+      const token = jwt.sign({ userId: newUser._id }, process.env.jWT_secret, { expiresIn: "1h" });
 
       // Send a success response
       res.status(201).json({ message: 'User registered successfully',token });
@@ -54,7 +54,7 @@ const login = async (req, res) => {
       // Generate JWT token
       const token = jwt.sign(
           { id: user._id, email: user.email, role: user.role },
-          process.env.JWT_SECRET,
+          process.env.jWT_secret,
           { expiresIn: '1h' }
       );
     //   res.status(201).json({ message: 'Login successfully', token, role: user.role });
